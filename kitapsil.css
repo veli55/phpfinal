@@ -1,0 +1,84 @@
+/* Genel Sayfa Stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Tablo Stili */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Resim Alanı */
+td img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+/* Sil Linki */
+td a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* Gölgeleme ve Hover Efekti */
+tr:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease;
+}
+
+/* Mobile uyumlu stil */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    td img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}

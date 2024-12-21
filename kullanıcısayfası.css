@@ -1,0 +1,184 @@
+/* Genel Sayfa Stili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Stili */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Filtreleme Formu Stili */
+.filtre-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filtre-container form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtre-container label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filtre-container select, .filtre-container input {
+    padding: 8px;
+    font-size: 16px;
+    width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filtre-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filtre-container button:hover {
+    background-color: #4cae4c;
+}
+
+/* Kitaplar Container Stili */
+.kitaplar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Kitap Kartı Stili */
+.kitap-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.kitap-card:hover {
+    transform: translateY(-10px);
+}
+
+.kitap-resim img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kitap-resim span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #f5f5f5;
+    color: #888;
+    font-size: 18px;
+}
+
+.kitap-detay {
+    padding: 15px;
+}
+
+.kitap-detay h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.kitap-detay p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.kitap-detay a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kitap-detay a:hover {
+    text-decoration: underline;
+}
+
+/* Çıkış Yap Butonu Ortada */
+.navbar ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #e04d2f;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .filtre-container form {
+        flex-direction: column;
+    }
+
+    .filtre-container label {
+        margin-bottom: 10px;
+    }
+
+    .filtre-container select,
+    .filtre-container input,
+    .filtre-container button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .kitaplar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kitap-card {
+        width: 80%;
+    }
+}
